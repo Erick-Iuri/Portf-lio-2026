@@ -1,0 +1,273 @@
+:root {
+    --bg-color: #0f0f0f;
+    --card-bg: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: #888888;
+    --accent-color: #ffffff;
+    --border-color: #222222;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 60px 0 40px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: var(--text-primary) !important;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    color: var(--text-primary) !important;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: var(--text-secondary) !important;
+    margin-left: 30px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--text-primary) !important;
+}
+
+.hero-section {
+    padding: 60px 0;
+}
+
+.hero-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #666666;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.projects-title {
+    text-align: center;
+    margin: 60px 0 60px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.project-card {
+    background: linear-gradient(180deg, #151B20 0%, #080A0C 100%);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid #222;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #444;
+}
+
+.project-info {
+    margin-bottom: 40px;
+}
+
+.project-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+footer {
+    text-align: center;
+    padding: 60px 0 60px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Placeholder for images */
+.img-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Modal Styles */
+.modal-content {
+    background-color: #121212;
+    border: 1px solid #333;
+    color: white;
+}
+
+.modal-header {
+    border-bottom: 1px solid #333;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+.carousel-item {
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+}
+
+.carousel-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-section {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .profile-name {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .profile-img {
+        margin-right: 25px;
+    }
+
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+hr {
+    border-color: var(--border-color);
+    opacity: 1;
+    margin: 40px 0;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.info-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.location {
+    font-size: 1rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+}
+
+.location img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.bio-section {
+    margin-bottom: 60px;
+}
+
+.bio-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.bio-text {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.6;
+    max-width: 850px;
+}
+
+.cv-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 80px;
+    border-bottom: 1px solid var(--text-primary);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    transition: opacity 0.3s;
+}
+
+.cv-link:hover {
+    opacity: 0.7;
+    color: var(--text-primary);
+}
+
+.cv-link i {
+    margin-right: 10px;
+}
